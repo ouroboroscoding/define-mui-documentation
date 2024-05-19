@@ -1,0 +1,44 @@
+{
+	"__ui__": {
+		"__results__": [ "string", "int", "date", "select" ],
+		"__primary__": "id"
+	},
+
+	"__name__": "Example",
+
+	"id": {
+		"__type__": "uuid",
+		"__optional__": true
+	},
+
+	"created": {
+		"__type__": "timestamp",
+		"__optional__": true
+	},
+
+	"string": {
+		"__type__": "string",
+		"__maximum__": 32
+	},
+
+	"int": {
+		"__type__": "int",
+		"__minimum__": 10,
+		"__maximum__": 20
+	},
+
+	"date": {
+		"__type__": "date",
+		"__minumum__": "2024-01-01",
+		"__optional__": true
+	},
+
+	"select": {
+		"__type__": "string",
+		"__options__": [ "one", "two", "three" ]
+	},
+
+	"bool": {
+		"__type__": "bool"
+	}
+}
